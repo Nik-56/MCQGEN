@@ -7,5 +7,3 @@ PyPDF2
 langchain-google-genai
 cygrpc
 grpcio
-
--e .
