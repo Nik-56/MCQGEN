@@ -3,7 +3,7 @@ google-ai-generativelanguage
 langchain
 streamlit
 python-dotenv
-PyPDF2
+PyPDF2~=2.0
 langchain-google-genai
 cygrpc
 grpcio
