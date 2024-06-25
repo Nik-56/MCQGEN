@@ -7,7 +7,9 @@ from src.mcqgenerator.utils import read_file, get_table_data
 from src.mcqgenerator.logger import logging
 import streamlit as st
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
-st.secrets['GOOGLE_API_KEY']
+header = {
+"GOOGLE_API_KEY": st.secrets['GOOGLE_API_KEY']
+}
 
 with open(r'Response.json', 'r') as file:
     RESPONSE_JSON=json.load(file)
