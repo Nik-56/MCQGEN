@@ -14,11 +14,12 @@ from src.mcqgenerator.utils import read_file, get_table_data
 from src.mcqgenerator.logger import logging
 
 # GOOGLE_API_KEY = "AIzaSyBN7qOOuGRmhZf5lC8uu6hr1SOW6_7pFA4"
-st.secrets['GOOGLE_API_KEY']
-load_dotenv()
-os.getenv('GOOGLE_API_KEY')
-# os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
-
+# st.secrets['GOOGLE_API_KEY']
+# load_dotenv()
+# os.getenv('GOOGLE_API_KEY')
+st.write(
+os.environ["GOOGLE_API_KEY"] == st.secrets['GOOGLE_API_KEY']
+)
 llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=0.7)
 
 
