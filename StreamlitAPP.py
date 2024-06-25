@@ -9,7 +9,7 @@ import streamlit as st
 from src.mcqgenerator.MCQGenerator import generate_evaluate_chain
 
 
-with open(r'C:\Users\Nikhil\OneDrive\Documents\Desktop\openai\MCQGEN\Response.json', 'r') as file:
+with open(r'Response.json', 'r') as file:
     RESPONSE_JSON=json.load(file)
 
 st.title("MCQ Generator")

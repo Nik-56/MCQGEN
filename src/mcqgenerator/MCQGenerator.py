@@ -4,6 +4,7 @@ import pandas as pd
 import traceback
 from dotenv import load_dotenv
 from grpc._cython import cygrpc
+import streamlit as st
 from grpc._typing import MetadataType
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
@@ -12,7 +13,8 @@ from langchain.chains import SequentialChain
 from src.mcqgenerator.utils import read_file, get_table_data
 from src.mcqgenerator.logger import logging
 
-
+# GOOGLE_API_KEY = "AIzaSyBN7qOOuGRmhZf5lC8uu6hr1SOW6_7pFA4"
+st.secrets.google_api.GOOGLE_API_KEY
 load_dotenv()
 os.getenv('GOOGLE_API_KEY')
 # os.environ["GOOGLE_API_KEY"] = GOOGLE_API_KEY
