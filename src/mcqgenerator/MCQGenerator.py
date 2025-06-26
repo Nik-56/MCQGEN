@@ -20,7 +20,7 @@ from src.mcqgenerator.logger import logging
 header = {
 "GOOGLE_API_KEY": st.secrets['GOOGLE_API_KEY']
 }
-llm = ChatGoogleGenerativeAI(model="gemini-pro",temperature=0.7)
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash",temperature=0.7)
 
 
 
